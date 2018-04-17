@@ -1,5 +1,6 @@
 #include "student.h"
 #include "Schetchik.h"
+#include "StudentKonstrukt.h"
 #include <time.h>
 
 int main() {
@@ -26,14 +27,14 @@ int main() {
 			getline(cin, name, '\n');
 			age = rand() % 15 + 15;
 			/*stud[i].set(name, age);*/
-			stud[i].setName(name);
-			stud[i].setAge(age);
+			/*stud[i].setName(name);
+			stud[i].setAge(age);*/
 		}
 		cout << "\n\n";
 		for (int i = 0; i < n; i++) {
-			cout << stud[i].getName() << " - " << stud[i].getAge() << " age\n";
+			/*cout << stud[i].getName() << " - " << stud[i].getAge() << " age\n";
 			cout << "Ocenki\n";
-			stud[i].ocenki();
+			stud[i].ocenki();*/
 		}
 	}
 	else if (nz == 2)
@@ -80,6 +81,17 @@ int main() {
 				break;
 			}
 		} while (key!=0);
+	}
+	else if (nz == 3)
+	{
+		Studentcla s1("Kostya", "Klyukin", 32);
+		Studentcla s2(s1);
+		Studentcla ss[10];
+		s1.print();
+		s2.print();
+		s1.~Studentcla();     
+		system("pause");
+		return 0;
 	}
 	else
 		cout << "Dannogo zadaniya net!";

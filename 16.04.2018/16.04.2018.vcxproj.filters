@@ -26,5 +26,8 @@
     <ClInclude Include="Schetchik.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StudentKonstrukt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
